@@ -7,9 +7,9 @@ const obj1 = {
   surname: "Hilal",
   age: 19,
 };
-const { age } = obj1;
+const { name, surname, ...rest } = obj1;
 
-if (sum > age) {
+if (sum > rest) {
   console.log("Array win");
 } else {
   console.log("Object win");
